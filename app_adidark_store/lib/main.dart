@@ -24,12 +24,12 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
       ),
-      // home: ProfileScreen(
-      //     name: "Hào Lý",
-      //     email: "haoly123@gmail.com",
-      //     img: "https://avatars.githubusercontent.com/u/134797173?v=4"),
+      home: ProfileScreen(
+          name: "Hào Lý",
+          email: "haoly123@gmail.com",
+          img: "https://avatars.githubusercontent.com/u/134797173?v=4"),
       // home: const SettingScreen(),
-      home: const NotificationScreen(),
+      // home: const NotificationScreen(),
     );
   }
 }

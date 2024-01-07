@@ -15,16 +15,12 @@ class ProfileScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if (email.length > (MediaQuery.of(context).size.width / 13).floor()) {
-      email =
-          email.substring(0, (MediaQuery.of(context).size.width / 13).floor()) +
-              "...";
+    if (email.length > 27) {
+      email = email.substring(0, 27) + "...";
     }
 
-    if (name.length > (MediaQuery.of(context).size.width / 18).floor()) {
-      name =
-          name.substring(0, (MediaQuery.of(context).size.width / 18).floor()) +
-              "...";
+    if (name.length > 20) {
+      name = name.substring(0, 20) + "...";
     }
 
     return Scaffold(
