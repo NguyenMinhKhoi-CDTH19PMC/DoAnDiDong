@@ -49,6 +49,7 @@ class SettingScreen extends StatelessWidget {
                   title: "Help",
                   sub: "Contact us, Privacy Policy",
                 ),
+                Text("${MediaQuery.of(context).size.width}")
               ],
             ),
           ),

@@ -1,3 +1,4 @@
+import 'package:app_adidark_store/view/notification_screen.dart';
 import 'package:app_adidark_store/view/profile_screen.dart';
 import 'package:app_adidark_store/view/setting_screen.dart';
 import 'package:flutter/material.dart';
@@ -27,7 +28,8 @@ class MyApp extends StatelessWidget {
       //     name: "Hào Lý",
       //     email: "haoly123@gmail.com",
       //     img: "https://avatars.githubusercontent.com/u/134797173?v=4"),
-      home: const SettingScreen(),
+      // home: const SettingScreen(),
+      home: const NotificationScreen(),
     );
   }
 }

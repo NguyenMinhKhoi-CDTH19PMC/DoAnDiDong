@@ -15,12 +15,16 @@ class ProfileScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if (email.length > 27) {
-      email = email.substring(0, 27) + "...";
+    if (email.length > (MediaQuery.of(context).size.width / 13).floor()) {
+      email =
+          email.substring(0, (MediaQuery.of(context).size.width / 13).floor()) +
+              "...";
     }
 
-    if (name.length > 20) {
-      name = name.substring(0, 20) + "...";
+    if (name.length > (MediaQuery.of(context).size.width / 18).floor()) {
+      name =
+          name.substring(0, (MediaQuery.of(context).size.width / 18).floor()) +
+              "...";
     }
 
     return Scaffold(
@@ -94,6 +98,34 @@ class ProfileScreen extends StatelessWidget {
                           title: "Notifications"),
                       ProfileItem(
                           icon: Icons.access_time, title: "Order History"),
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(0, 10, 0, 7),
+                        child: GestureDetector(
+                          onTap: () {},
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(50),
+                            ),
+                            child: Padding(
+                              padding: const EdgeInsets.fromLTRB(0, 10, 0, 10),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Icon(
+                                    Icons.logout_rounded,
+                                    size: MediaQuery.of(context).size.width / 9,
+                                  ),
+                                  Text(
+                                    "Logout",
+                                    style: TextStyle(fontSize: 20),
+                                  )
+                                ],
+                              ),
+                            ),
+                          ),
+                        ),
+                      )
                     ],
                   ),
                 ))
