@@ -26,11 +26,13 @@ class ProfileScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Color.fromRGBO(203, 233, 255, 0.4),
-        title: Text(
-          "My Profile",
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 20,
+        title: Center(
+          child: Text(
+            "My Profile",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 20,
+            ),
           ),
         ),
       ),

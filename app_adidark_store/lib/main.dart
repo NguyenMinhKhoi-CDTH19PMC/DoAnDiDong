@@ -1,4 +1,5 @@
 import 'package:app_adidark_store/view/profile_screen.dart';
+import 'package:app_adidark_store/view/setting_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
@@ -22,10 +23,11 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
       ),
-      home: ProfileScreen(
-          name: "Hào Lý",
-          email: "haoly123@gmail.com",
-          img: "https://avatars.githubusercontent.com/u/134797173?v=4"),
+      // home: ProfileScreen(
+      //     name: "Hào Lý",
+      //     email: "haoly123@gmail.com",
+      //     img: "https://avatars.githubusercontent.com/u/134797173?v=4"),
+      home: const SettingScreen(),
     );
   }
 }
